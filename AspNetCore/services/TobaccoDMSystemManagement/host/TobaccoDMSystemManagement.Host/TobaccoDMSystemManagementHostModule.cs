@@ -62,7 +62,7 @@ public class TobaccoDMSystemManagementHostModule : AbpModule
         // Swagger
         context.Services.AddSwaggerGen(options =>
         {
-            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TobaccoDMSystemManagement.Core.xml"), true);
+            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TobaccoDMSystemManagement.AppService.xml"), true);
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TobaccoDMSystemManagement.HttpApi.xml"), true);
         });
     }

@@ -1,6 +1,6 @@
 using Volo.Abp.DependencyInjection;
 
-namespace TobaccoDMSystemManagement.Core;
+namespace TobaccoDMSystemManagement.AppService;
 
 public interface ITobaccoDMSystemManagementAppService : ITransientDependency;
 
