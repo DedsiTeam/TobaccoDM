@@ -8,21 +8,15 @@ public interface ISqlSugarRepository<TEntity> : ITransientDependency
 {
     Task<ISugarQueryable<TEntity>> GetQueryableAsync();
     Task<ISugarQueryable<TEntity>> GetQueryableAsync(Expression<Func<TEntity, bool>> expression);
-    
     Task<bool> AnyAsync(Expression<Func<TEntity, bool>> expression);
-    
     Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> expression);
     Task<TEntity> GetAsync(string sql, object? whereObj = null);
     Task<TResult> GetAsync<TResult>(string sql, object? whereObj = null);
-    
     Task<TEntity> GetAsync<TPrimaryKey>(TPrimaryKey id);
-
     Task<List<TEntity>> GetListAsync();
     Task<List<TEntity>> GetListAsync(Expression<Func<TEntity, bool>> expression);
-
     Task<List<TEntity>> GetListAsync(string sql, object? whereObj = null);
     Task<List<TResult>> GetListAsync<TResult>(string sql, object? whereObj = null);
-
     Task<List<TEntity>> GetPageListAsync(
         int pageNumber,
         int pageSize,
