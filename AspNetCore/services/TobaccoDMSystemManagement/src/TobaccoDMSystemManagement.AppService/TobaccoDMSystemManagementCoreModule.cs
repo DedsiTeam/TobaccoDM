@@ -1,12 +1,9 @@
 using TobaccoDMSystemManagement.Domain;
 using Volo.Abp.Modularity;
 
-namespace TobaccoDMSystemManagement.Core;
+namespace TobaccoDMSystemManagement.AppService;
 
 [DependsOn(
     typeof(TobaccoDMSystemManagementDomainModule)
 )]
-public class TobaccoDMSystemManagementCoreModule : AbpModule
-{
-    
-}
+public class TobaccoDMSystemManagementCoreModule : AbpModule;

@@ -1,6 +1,6 @@
 ﻿using Dedsi.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
-using TobaccoDMSystemManagement.Core;
+using TobaccoDMSystemManagement.AppService;
 using Volo.Abp.Modularity;
 
 namespace TobaccoDMSystemManagement.HttpApi;

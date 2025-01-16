@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TobaccoDMSystemManagement.Core\TobaccoDMSystemManagement.Core.csproj" />
+    <ProjectReference Include="..\TobaccoDMSystemManagement.AppService\TobaccoDMSystemManagement.AppService.csproj" />
     <ProjectReference Include="..\TobaccoDMSystemManagement.Infrastructure\TobaccoDMSystemManagement.Infrastructure.csproj" />
   </ItemGroup>
 

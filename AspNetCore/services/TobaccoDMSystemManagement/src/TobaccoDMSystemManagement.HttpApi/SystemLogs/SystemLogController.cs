@@ -1,4 +1,4 @@
-using TobaccoDMSystemManagement.Core.SystemLogs;
+using TobaccoDMSystemManagement.AppService.SystemLogs;
 
 namespace TobaccoDMSystemManagement.SystemLogs;
 

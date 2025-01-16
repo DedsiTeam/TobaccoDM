@@ -1,6 +1,6 @@
 using TobaccoDMSystemManagement.Infrastructure.Repositories.SystemLogs;
 
-namespace TobaccoDMSystemManagement.Core.SystemLogs;
+namespace TobaccoDMSystemManagement.AppService.SystemLogs;
 
 public interface ISystemLogAppService: ITobaccoDMSystemManagementAppService;
 

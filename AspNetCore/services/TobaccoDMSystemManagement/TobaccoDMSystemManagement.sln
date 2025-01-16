@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Infrastructure", "src\TobaccoDMSystemManagement.Infrastructure\TobaccoDMSystemManagement.Infrastructure.csproj", "{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Core", "src\TobaccoDMSystemManagement.Core\TobaccoDMSystemManagement.Core.csproj", "{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.AppService", "src\TobaccoDMSystemManagement.AppService\TobaccoDMSystemManagement.AppService.csproj", "{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Domain", "src\TobaccoDMSystemManagement.Domain\TobaccoDMSystemManagement.Domain.csproj", "{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}"
 EndProject
