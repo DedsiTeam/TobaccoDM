@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "host", "host", "{490456D1-AA48-4449-BB2E-41DC3A856AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Host", "host\TobaccoDMSystemManagement.Host\TobaccoDMSystemManagement.Host.csproj", "{75EBFB18-358D-4D97-8413-6EEDE08AD69D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2CDC52FB-7374-4175-A6A5-1977777D6C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.HttpApi", "src\TobaccoDMSystemManagement.HttpApi\TobaccoDMSystemManagement.HttpApi.csproj", "{13A08320-AD8C-4D52-AD5A-951E73CB1EF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Infrastructure", "src\TobaccoDMSystemManagement.Infrastructure\TobaccoDMSystemManagement.Infrastructure.csproj", "{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.AppService", "src\TobaccoDMSystemManagement.AppService\TobaccoDMSystemManagement.AppService.csproj", "{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TobaccoDMSystemManagement.Domain", "src\TobaccoDMSystemManagement.Domain\TobaccoDMSystemManagement.Domain.csproj", "{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75EBFB18-358D-4D97-8413-6EEDE08AD69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75EBFB18-358D-4D97-8413-6EEDE08AD69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75EBFB18-358D-4D97-8413-6EEDE08AD69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75EBFB18-358D-4D97-8413-6EEDE08AD69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A08320-AD8C-4D52-AD5A-951E73CB1EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A08320-AD8C-4D52-AD5A-951E73CB1EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A08320-AD8C-4D52-AD5A-951E73CB1EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A08320-AD8C-4D52-AD5A-951E73CB1EF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EC8977-9CDE-4C33-96F7-6303F8FF01A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8C6654-6AC9-4D3D-9152-8B755D1545B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75EBFB18-358D-4D97-8413-6EEDE08AD69D} = {490456D1-AA48-4449-BB2E-41DC3A856AC4}
+		{13A08320-AD8C-4D52-AD5A-951E73CB1EF9} = {2CDC52FB-7374-4175-A6A5-1977777D6C2A}
+		{35EC8977-9CDE-4C33-96F7-6303F8FF01A9} = {2CDC52FB-7374-4175-A6A5-1977777D6C2A}
+		{9D8C6654-6AC9-4D3D-9152-8B755D1545B8} = {2CDC52FB-7374-4175-A6A5-1977777D6C2A}
+		{E31DAB05-61D2-4C3B-8CD5-50D7DFADFF3B} = {2CDC52FB-7374-4175-A6A5-1977777D6C2A}
+	EndGlobalSection
+EndGlobal
