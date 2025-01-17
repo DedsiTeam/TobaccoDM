@@ -17,7 +17,7 @@ public class TobaccoDMSystemManagementInfrastructureModule : AbpModule
         
         var connectionConfig = new ConnectionConfig
         {
-            DbType = DbType.SqlServer,
+            DbType = DbType.MySql,
             ConnectionString = configuration.GetConnectionString(TobaccoDMSystemManagementConsts.ConnectionStringName),
             IsAutoCloseConnection = true
         };
