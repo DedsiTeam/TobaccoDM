@@ -19,7 +19,8 @@ public class TobaccoDMSystemManagementInfrastructureModule : AbpModule
         {
             DbType = DbType.MySql,
             ConnectionString = configuration.GetConnectionString(TobaccoDMSystemManagementConsts.ConnectionStringName),
-            IsAutoCloseConnection = true
+            IsAutoCloseConnection = true,
+            ConfigureExternalServices = SqlSugarConfigureExternalServices.Get()
         };
         context.Services.AddScoped<ISqlSugarClient>(s => new SqlSugarClient(connectionConfig));
     }
