@@ -6,7 +6,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Auditing;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.SqlServer;
+using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Json;
 using Volo.Abp.Modularity;
 
@@ -16,7 +16,7 @@ namespace TobaccoDMAuthorization;
     // ProjectName
     typeof(TobaccoDMAuthorizationHttpApiModule),
 
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
+    typeof(AbpEntityFrameworkCoreMySQLModule),
     typeof(AbpAspNetCoreMvcModule),
     typeof(AbpAutofacModule)
 )]
@@ -37,7 +37,7 @@ public class TobaccoDMAuthorizationHostModule : AbpModule
                 {
                     dbConfigContext.DbContextOptions.LogTo(Serilog.Log.Information, new[] { DbLoggerCategory.Database.Command.Name }).EnableSensitiveDataLogging();
                 }
-                dbConfigContext.UseSqlServer();
+                dbConfigContext.UseMySQL();
             });
         });
         
