@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TobaccoDMAuthorization.DmRoles;
 using TobaccoDMAuthorization.DmUsers;
 using Volo.Abp;
 
@@ -10,7 +11,6 @@ public static class TobaccoDMAuthorizationDbContextModelCreatingExtensions
     {
         Check.NotNull(builder, nameof(builder));
 
-        // 日志表
         builder.Entity<DmUser>(b =>
         {
             b.ToTable("DmUsers", TobaccoDMAuthorizationDomainOptions.DbSchemaName);
@@ -38,6 +38,13 @@ public static class TobaccoDMAuthorizationDbContextModelCreatingExtensions
             b.ToTable("DmUserRoles", TobaccoDMAuthorizationDomainOptions.DbSchemaName);
 
             b.HasKey(c => new { c.UserId, c.RoleId });
+        });
+        
+        builder.Entity<DmRole>(b =>
+        {
+            b.ToTable("DmRoles", TobaccoDMAuthorizationDomainOptions.DbSchemaName);
+            
+            b.HasKey(c => c.Id);
         });
     }
 }

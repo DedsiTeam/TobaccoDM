@@ -114,11 +114,7 @@ public class TobaccoDMAuthorizationHostModule : AbpModule
         app.UseAuthorization();
 
         app.UseAuditing();
-        app.UseConfiguredEndpoints(endpoints =>
-        {
-            // AuthorizeAttribute
-            // endpoints.MapControllers().RequireAuthorization();
-        });
+        app.UseConfiguredEndpoints();
 
     }
 }
