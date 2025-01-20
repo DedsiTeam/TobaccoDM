@@ -215,7 +215,7 @@ public class SqlSugarRepository<TEntity>(ISqlSugarClient dbClient) : ISqlSugarRe
             resultCount = await dbClient.Insertable(entities).ExecuteCommandAsync();
         }
 
-        return resultCount == entities.Count;
+        return 0 == entities.Count;
     }
     
     public async Task<bool> InsertAsync(TEntity entity)

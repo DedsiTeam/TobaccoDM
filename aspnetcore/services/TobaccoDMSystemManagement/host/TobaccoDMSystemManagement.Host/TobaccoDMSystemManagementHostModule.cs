@@ -5,6 +5,7 @@ using TobaccoDMSystemManagement.HttpApi;
 using TobaccoDMSystemManagement.Infrastructure;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.Auditing;
 using Volo.Abp.Autofac;
 using Volo.Abp.Json;
@@ -65,6 +66,14 @@ public class TobaccoDMSystemManagementHostModule : AbpModule
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TobaccoDMSystemManagement.AppService.xml"), true);
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TobaccoDMSystemManagement.HttpApi.xml"), true);
         });
+        
+        Configure<AbpAntiForgeryOptions>(options =>
+        {
+            options.TokenCookie.Expiration = TimeSpan.FromDays(365);
+            options.AutoValidateIgnoredHttpMethods.Remove("POST");
+            options.AutoValidateFilter =
+                type => !type.Namespace.StartsWith("TobaccoDMSystemManagement");
+        });
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -94,8 +103,8 @@ public class TobaccoDMSystemManagementHostModule : AbpModule
             options.DefaultModelExpandDepth(-1);
         });
 
-        app.UseAuthentication();
-        app.UseAuthorization();
+        //app.UseAuthentication();
+        //app.UseAuthorization();
 
         app.UseAuditing();
         app.UseConfiguredEndpoints(endpoints =>
