@@ -24,9 +24,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="SystemLogs\Dtos\**" />
-      <EmbeddedResource Remove="SystemLogs\Dtos\**" />
-      <None Remove="SystemLogs\Dtos\**" />
+      <PackageReference Include="Volo.Abp.Guids" Version="9.0.3" />
     </ItemGroup>
 
 

@@ -1,11 +1,13 @@
 using System.Reflection;
 using SqlSugar;
 using TobaccoDMSystemManagement.Domain.SystemLogs;
+using TobaccoDMSystemManagement.Domain.SystemMenus;
 
 namespace TobaccoDMSystemManagement.Infrastructure;
 
 public static class SqlSugarConfigureExternalServices
 {
+
     public static ConfigureExternalServices Get()
     {
         Action<PropertyInfo, EntityColumnInfo> EntityServiceAction = (s, p) =>
@@ -21,9 +23,14 @@ public static class SqlSugarConfigureExternalServices
         {
             if (type.Name == nameof(SystemLog))
             {
-                entity.DbTableName = "dbo.system_log";
+                entity.DbTableName = "system_log";
+            }
+            else if (type.Name == nameof(SystemMenu))
+            {
+                entity.DbTableName = "system_menu";
             }
         };
+       
 
         return new ConfigureExternalServices()
         {
