@@ -16,4 +16,9 @@
       <ProjectReference Include="..\TobaccoDMInputAcceptance.Infrastructure\TobaccoDMInputAcceptance.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="SubsidyRules\Dtos\" />
+      <Folder Include="SubsidyRules\Queries\" />
+    </ItemGroup>
+
 </Project>

@@ -9,6 +9,7 @@ public class CreateInitialInspectionCommandHandler(IInitialInspectionRepository 
     public override async Task<bool> Handle(CreateInitialInspectionCommand command, CancellationToken cancellationToken)
     {
         var initialInspection = new InitialInspection(GuidGenerator.Create(), command.InitialName, command.InitialDescription, command.InitialInspector);
+
         initialInspection.AddTobaccoGrowerAndSetInitialInspectionId(command.TobaccoGrowers);
 
         await inspectionRepository.InsertAsync(initialInspection,false, cancellationToken);
